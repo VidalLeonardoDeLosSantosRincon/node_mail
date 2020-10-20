@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Mails</title>
+</head>
+<body>
+    <div class="ctr">
+        <form action="/" method="POST">
+            <h4>Send Emails</h4>
+            <input type="email" id="email_from "name="email_from" placeholder="From Email" value="" required/>
+            <input type="email" id="email_to "name="email_to" placeholder="To Email" value="" required/>
+            <textarea name="message" id="message" cols="30" rows="10" style="resize:none;" placeholder="message" required>
+            </textarea>
+            <input type="submit" value="Send Message"/>
+        </form>
+    </div>
+</body>
+<style>
+*{
+    margin:0;
+    padding:0;
+    font-family:arial;
+}
+
+.ctr{
+    width:100%;
+    height:100vh;
+    background: white;
+    padding:10px 25px;
+    box-sizing: border-box;
+}
+
+.ctr form{
+    background:white;
+    padding:25px;
+    box-sizing:border-box;
+    width:450px;
+    margin:50px auto 0 auto;
+    border:0.5px solid rgba(0, 0, 0, 0.1);
+    border-radius:3px;
+    box-shadow:2px 2px 5px rgba(0,0,0,0.2);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    
+}
+
+.ctr form h4{
+    font-size:24px;
+    font-weight:300;
+    color:gray;
+}
+
+.ctr form input[type="email"]{
+    margin:5px 0;
+    background:white;
+    border:1px solid rgba(0, 0, 0, 0.2);
+    border-radius:3px;
+    width:100%;
+    height:30px;
+    padding:0 5px;
+    box-sizing:border-box;
+}
+
+.ctr form textarea{
+    width:100%;
+    background:white;
+    border:1px solid rgba(0, 0, 0, 0.2);
+    border-radius:3px;
+    padding:5px 10px;
+    box-sizing:border-box;
+}
+
+.ctr form input[type="submit"]{
+    cursor:pointer;
+    margin:5px 0;
+    box-sizing:border-box;
+    background:dodgerblue;
+    color:white;
+    border:none;
+    border-radius:3px;
+    padding:10px 15px;
+    box-sizing:border-box;
+}
+</style>
+</html>
